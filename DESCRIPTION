@@ -12,6 +12,7 @@ RoxygenNote: 7.1.2
 Imports: 
     magrittr,
     shiny,
+    shiny.mui
 Remotes: 
     github::quartzsoftwarellc/shiny.mui
 URL: https://quartzsoftwarellc.github.io/shiny.quartz/
