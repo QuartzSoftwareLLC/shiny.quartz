@@ -15,3 +15,11 @@ AcknowledgementCard(
 \description{
 A card for acknowledging the authors of a publication.
 }
+\examples{
+library(shiny.quartz)
+library(shiny.mui)
+
+component_example(
+    AcknowledgementCard()
+)
+}

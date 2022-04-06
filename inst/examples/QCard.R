@@ -2,5 +2,5 @@ library(shiny.quartz)
 library(shiny.mui)
 
 component_example(
-    SimpleCard(title = "Hello", "go")
+    QCard(title = "Hello", "go")
 )
