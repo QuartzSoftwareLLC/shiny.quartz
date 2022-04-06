@@ -3,6 +3,5 @@
 # Installation 
 
 ```R
-remotes::install_github("quartz
-    softwarellc/shiny.quartz")
+remotes::install_github("quartzsoftwarellc/shiny.quartz")
 ```
