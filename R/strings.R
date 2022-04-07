@@ -5,5 +5,6 @@
 #' @param upper upper CI
 #' @export
 format_ci <- function(val, lower, upper) {
-    return(paste0(val, " (", lower, " - ", upper, ")"))
+    format <- \(x) prettyNum(x, big.mark = ",")
+    return(paste0(format(val), " (", format(lower), " - ", format(upper), ")"))
 }
