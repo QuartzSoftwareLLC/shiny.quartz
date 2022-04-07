@@ -1,5 +1,5 @@
-# " @export
-# " @importFrom shiny.mui ThemeProvider
+#' @export
+#' @importFrom shiny.mui ThemeProvider
 QThemeProvider <- function(...) {
     input <- list(defaultProps = list(fullWidth = T, size = "small"))
     ThemeProvider(
