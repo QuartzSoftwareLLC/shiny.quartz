@@ -4,7 +4,7 @@
 \alias{QCard}
 \title{Helper to create cards with card content}
 \usage{
-QCard(..., title = "")
+QCard(..., title = "", Toolbar = "")
 }
 \description{
 Helper to create cards with card content
@@ -14,6 +14,6 @@ library(shiny.quartz)
 library(shiny.mui)
 
 component_example(
-    QCard(title = "Hello", "go")
+    QCard(title = "Hello", Toolbar = "hi", "go")
 )
 }
