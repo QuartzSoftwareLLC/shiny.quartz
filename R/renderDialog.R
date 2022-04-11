@@ -15,6 +15,7 @@ renderDialog <- function(button_id, input, ..., ns = NS(NULL)) {
 
     renderReact({
         Dialog(
+            maxWidth = "xl",
             open = isDialogOpen(),
             onClose = JS(paste0("function() { Shiny.setInputValue('", ns(hide_input), "', Math.random()); }")),
             DialogContent(

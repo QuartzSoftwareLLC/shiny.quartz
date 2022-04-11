@@ -1,11 +1,12 @@
 library(shiny.mui)
+library(shiny.quartz)
 library(shiny)
 
 
 if (interactive()) {
     shinyApp(
         ui = div(
-            Button.shinyInput("showDialog", "Open dialog"),
+            IconButton.shinyInput("showDialog", InfoIcon()),
             reactOutput("reactDialog")
         ),
         server = function(input, output) {
