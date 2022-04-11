@@ -6,7 +6,7 @@
 \usage{
 AcknowledgementCard(
   authors = c("Timothy L. Wiemken", "Jacob A. Clarke", "Christopher Prener",
-    "John McLaughlin")
+    "Verna Welch", "John McLaughlin")
 )
 }
 \arguments{

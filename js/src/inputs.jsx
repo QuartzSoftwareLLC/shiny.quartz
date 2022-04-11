@@ -1,6 +1,5 @@
-import { ButtonAdapter, InputAdapter } from '@/shiny.react';
+import { InputAdapter } from '@/shiny.react';
 import * as Mui from '@mui/material';
-import { useState } from 'react';
 
 export const IconSwitch = InputAdapter(
   ({ open, onClick, children }) => {
