@@ -4,7 +4,7 @@
 \alias{QCard}
 \title{Helper to create cards with card content}
 \usage{
-QCard(..., title = "", Toolbar = "")
+QCard(..., title = "", Toolbar = Box())
 }
 \description{
 Helper to create cards with card content
