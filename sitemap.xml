@@ -43,6 +43,9 @@
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/QSwitch.shinyInput.html</loc>
   </url>
   <url>
+    <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/ReactMarkdown.html</loc>
+  </url>
+  <url>
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/format_ci.html</loc>
   </url>
   <url>
@@ -50,6 +53,9 @@
   </url>
   <url>
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/make_options.html</loc>
+  </url>
+  <url>
+    <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/renderDialog.html</loc>
   </url>
   <url>
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/use_app.html</loc>
