@@ -26,7 +26,7 @@ var IconSwitch = (0,_shiny_react__WEBPACK_IMPORTED_MODULE_0__.InputAdapter)(func
       onClick = _ref.onClick,
       children = _ref.children;
   return /*#__PURE__*/React.createElement(_mui_material__WEBPACK_IMPORTED_MODULE_1__.IconButton, {
-    color: open ? 'primary' : 'default',
+    color: open ? 'secondary' : 'default',
     onClick: onClick
   }, children);
 }, function (value, setValue) {

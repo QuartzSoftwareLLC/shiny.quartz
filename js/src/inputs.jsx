@@ -5,7 +5,7 @@ import { useState } from 'react';
 export const IconSwitch = InputAdapter(
   ({ open, onClick, children }) => {
     return (
-      <Mui.IconButton color={open ? 'primary' : 'default'} onClick={onClick}>
+      <Mui.IconButton color={open ? 'secondary' : 'default'} onClick={onClick}>
         {children}
       </Mui.IconButton>
     );
