@@ -1,21 +1,14 @@
 Package: shiny.quartz
-Title: What the Package Does (One Line, Title Case)
+Title: Component library for quartz software based dashboards
 Version: 0.0.0.9001
-Authors@R: person("Jacob", "Clarke", , "jacobclarke718@gmail.com",  role = c("aut", "cre"),  comment = c(ORCID = "0000-0002-7221-6244") )
-Description: What the package does (one paragraph).
+Authors@R: person("Jacob", "Clarke", , "jacobclarke718@gmail.com",  role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7221-6244") )
+Description: Component library for quartz software based dashboards built on shiny.mui
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+Remotes: quartzsoftwarellc/shiny.mui
 Imports: 
     magrittr,
     shiny,
     shiny.mui
-Remotes: 
-    github::quartzsoftwarellc/shiny.mui
-repo:
-  url:
-    home: https://github.com/quartzsoftwarellc/shiny.quartz
-    source: https://github.com/quartzsoftwarellc/shiny.quartz/HEAD/
-    issue: https://github.com/quartzsoftwarellc/shiny.quartz/issues/
-    user: https://github.com/quartzsoftwarellc
