@@ -1,4 +1,5 @@
 import { InputAdapter } from '@/shiny.react';
+import DateSliderBase from './DateSlider';
 import * as Mui from '@mui/material';
 
 export const IconSwitch = InputAdapter(
@@ -17,3 +18,8 @@ export const IconSwitch = InputAdapter(
     },
   })
 );
+
+export const DateSlider = InputAdapter(DateSliderBase, (value, setValue) => ({
+  value,
+  onChange: setValue,
+}));

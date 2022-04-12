@@ -12,3 +12,9 @@ input <- function(name, defaultValue = "") {
 #'
 #' @export
 IconSwitch.shinyInput <- input("IconSwitch")
+
+#' DateSlider
+#'
+#' @example inst/examples/DateSlider.R
+#' @export
+DateSlider.shinyInput <- input("DateSlider")

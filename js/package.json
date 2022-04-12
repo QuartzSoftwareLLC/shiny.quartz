@@ -4,6 +4,12 @@
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.12.10",
     "@babel/register": "^7.12.10",
+    "@storybook/addon-actions": "^6.4.21",
+    "@storybook/addon-essentials": "^6.4.21",
+    "@storybook/addon-interactions": "^6.4.21",
+    "@storybook/addon-links": "^6.4.21",
+    "@storybook/react": "^6.4.21",
+    "@storybook/testing-library": "^0.0.9",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.0.4",
     "css-loader": "^6.7.1",
@@ -14,12 +20,15 @@
     "webpack-cli": "^4.9.2"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
     "@mui/material": "^5.5.3",
+    "dayjs": "^1.11.0",
     "react-markdown": "^8.0.2",
     "rehype-katex": "^6.0.2",
     "remark-math": "^5.1.1"

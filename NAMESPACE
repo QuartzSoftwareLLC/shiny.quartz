@@ -2,6 +2,7 @@
 
 export(AcknowledgementCard)
 export(Container)
+export(DateSlider.shinyInput)
 export(IconSwitch.shinyInput)
 export(Item)
 export(Page)
