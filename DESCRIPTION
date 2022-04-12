@@ -13,4 +13,9 @@ Imports:
     shiny.mui
 Remotes: 
     github::quartzsoftwarellc/shiny.mui
-URL: https://quartzsoftwarellc.github.io/shiny.quartz/
+repo:
+  url:
+    home: https://github.com/quartzsoftwarellc/shiny.quartz
+    source: https://github.com/quartzsoftwarellc/shiny.quartz/HEAD/
+    issue: https://github.com/quartzsoftwarellc/shiny.quartz/issues/
+    user: https://github.com/quartzsoftwarellc
