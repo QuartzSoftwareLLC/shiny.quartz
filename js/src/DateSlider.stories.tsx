@@ -27,4 +27,5 @@ Primary.args = {
   step: 1,
   format: 'YYYY-MM',
   markFormat: 'YYYY',
+  markInterval: 2,
 };

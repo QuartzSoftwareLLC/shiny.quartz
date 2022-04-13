@@ -11173,7 +11173,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! dayjs */ "./node_modules/dayjs/dayjs.min.js");
 /* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_2__);
-var _excluded = ["startDate", "value", "onChange", "endDate", "interval", "format", "markFormat", "labelFormat"];
+var _excluded = ["startDate", "value", "onChange", "endDate", "interval", "format", "markFormat", "markInterval", "labelFormat"];
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -11215,6 +11215,8 @@ function DateSlider(_ref) {
       format = _ref$format === void 0 ? 'YYYY-MM' : _ref$format,
       _ref$markFormat = _ref.markFormat,
       markFormat = _ref$markFormat === void 0 ? undefined : _ref$markFormat,
+      _ref$markInterval = _ref.markInterval,
+      markInterval = _ref$markInterval === void 0 ? 1 : _ref$markInterval,
       _ref$labelFormat = _ref.labelFormat,
       labelFormat = _ref$labelFormat === void 0 ? undefined : _ref$labelFormat,
       props = _objectWithoutProperties(_ref, _excluded);
@@ -11253,9 +11255,9 @@ function DateSlider(_ref) {
     var inner = false;
 
     if (interval == 'year') {
-      inner = getMarks(12);
+      inner = getMarks(12 * markInterval);
     } else if (interval == 'month') {
-      inner = getMarks(1);
+      inner = getMarks(1 * markInterval);
     }
 
     return inner;

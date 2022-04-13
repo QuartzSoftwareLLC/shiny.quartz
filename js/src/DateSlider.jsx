@@ -10,6 +10,7 @@ export default function DateSlider({
   interval = 'month',
   format = 'YYYY-MM',
   markFormat = undefined,
+  markInterval = 1,
   labelFormat = undefined,
   ...props
 }) {
@@ -45,9 +46,9 @@ export default function DateSlider({
 
     let inner = false;
     if (interval == 'year') {
-      inner = getMarks(12);
+      inner = getMarks(12 * markInterval);
     } else if (interval == 'month') {
-      inner = getMarks(1);
+      inner = getMarks(1 * markInterval);
     }
     return inner;
   }, [interval]);
