@@ -11173,7 +11173,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! dayjs */ "./node_modules/dayjs/dayjs.min.js");
 /* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_2__);
-var _excluded = ["startDate", "value", "onChange", "endDate", "interval", "format", "markFormat", "markInterval", "labelFormat"];
+var _excluded = ["startDate", "value", "onChange", "endDate", "interval", "format", "markFormat", "animate", "animationInterval", "animationStepSize", "markInterval", "labelFormat"];
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -11215,6 +11215,12 @@ function DateSlider(_ref) {
       format = _ref$format === void 0 ? 'YYYY-MM' : _ref$format,
       _ref$markFormat = _ref.markFormat,
       markFormat = _ref$markFormat === void 0 ? undefined : _ref$markFormat,
+      _ref$animate = _ref.animate,
+      animate = _ref$animate === void 0 ? false : _ref$animate,
+      _ref$animationInterva = _ref.animationInterval,
+      animationInterval = _ref$animationInterva === void 0 ? 1000 : _ref$animationInterva,
+      _ref$animationStepSiz = _ref.animationStepSize,
+      animationStepSize = _ref$animationStepSiz === void 0 ? 1 : _ref$animationStepSiz,
       _ref$markInterval = _ref.markInterval,
       markInterval = _ref$markInterval === void 0 ? 1 : _ref$markInterval,
       _ref$labelFormat = _ref.labelFormat,
@@ -11232,9 +11238,31 @@ function DateSlider(_ref) {
   var max = dayjs__WEBPACK_IMPORTED_MODULE_2___default()(endDate).diff(startDate, 'month');
 
   var handleChange = function handleChange(event, newValue) {
-    onChange(dayjs__WEBPACK_IMPORTED_MODULE_2___default()(startDate).add(newValue, 'month').format(format));
     setSliderValue(newValue);
   };
+
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
+    onChange(dayjs__WEBPACK_IMPORTED_MODULE_2___default()(startDate).add(sliderValue, 'month').format(format));
+  }, [sliderValue]);
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(),
+      _useState4 = _slicedToArray(_useState3, 2),
+      animationId = _useState4[0],
+      setAnimationId = _useState4[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
+    if (animate) {
+      var animation = setInterval(function () {
+        setSliderValue(function (val) {
+          return val >= max ? 0 : val + animationStepSize;
+        });
+      }, animationInterval);
+      setAnimationId(animation);
+    } else {
+      console.log(animationId, 'interval');
+      clearInterval(animationId);
+    }
+  }, [animate]);
 
   var handleValueLabel = function handleValueLabel(val) {
     return dayjs__WEBPACK_IMPORTED_MODULE_2___default()(startDate).add(val, 'month').format(innerLabelFormat);

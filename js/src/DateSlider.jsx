@@ -1,5 +1,5 @@
 import * as Mui from '@mui/material';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import dayjs from 'dayjs';
 
 export default function DateSlider({
@@ -10,6 +10,9 @@ export default function DateSlider({
   interval = 'month',
   format = 'YYYY-MM',
   markFormat = undefined,
+  animate = false,
+  animationInterval = 1000,
+  animationStepSize = 1,
   markInterval = 1,
   labelFormat = undefined,
   ...props
@@ -23,9 +26,23 @@ export default function DateSlider({
   const max = dayjs(endDate).diff(startDate, 'month');
 
   const handleChange = (event, newValue) => {
-    onChange(dayjs(startDate).add(newValue, 'month').format(format));
     setSliderValue(newValue);
   };
+  useEffect(() => {
+    onChange(dayjs(startDate).add(sliderValue, 'month').format(format));
+  }, [sliderValue]);
+  const [animationId, setAnimationId] = useState();
+  useEffect(() => {
+    if (animate) {
+      const animation = setInterval(() => {
+        setSliderValue((val) => (val >= max ? 0 : val + animationStepSize));
+      }, animationInterval);
+      setAnimationId(animation);
+    } else {
+      console.log(animationId, 'interval');
+      clearInterval(animationId);
+    }
+  }, [animate]);
 
   const handleValueLabel = (val) =>
     dayjs(startDate).add(val, 'month').format(innerLabelFormat);

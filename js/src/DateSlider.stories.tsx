@@ -28,4 +28,6 @@ Primary.args = {
   format: 'YYYY-MM',
   markFormat: 'YYYY',
   markInterval: 2,
+  animationStepSize: 5,
+  animate: true,
 };
