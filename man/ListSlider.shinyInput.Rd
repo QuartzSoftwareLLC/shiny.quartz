@@ -7,7 +7,7 @@
 ListSlider.shinyInput(inputId, ..., value = defaultValue)
 }
 \description{
-ListSlider
+An animated slider component that takes a list for options. Value is reset when options change.
 }
 \examples{
 library(shiny.mui)

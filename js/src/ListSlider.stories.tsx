@@ -21,9 +21,9 @@ const Template = (props) => {
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
-  options: ['Hi', 'Jim', 'Jacob'],
+  options: ['Hi', 'Jim', 'Jacob', 'John'],
   step: 1,
-  markInterval: 2,
-  animationStepSize: 5,
+  markInterval: 1,
+  animationStepSize: 1,
   animate: false,
 };

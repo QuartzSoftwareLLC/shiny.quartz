@@ -22,6 +22,7 @@ DateSlider.shinyInput <- input("DateSlider")
 
 #' ListSlider
 #'
+#' An animated slider component that takes a list for options. Value is reset when options change.
 #' @example inst/examples/ListSlider.R
 #' @export
 ListSlider.shinyInput <- input("ListSlider")
