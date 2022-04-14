@@ -11308,6 +11308,140 @@ function DateSlider(_ref) {
 
 /***/ }),
 
+/***/ "./src/ListSlider.jsx":
+/*!****************************!*\
+  !*** ./src/ListSlider.jsx ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ListSlider)
+/* harmony export */ });
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/material */ "@mui/material");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_mui_material__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! dayjs */ "./node_modules/dayjs/dayjs.min.js");
+/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_2__);
+var _excluded = ["value", "onChange", "options", "animate", "animationInterval", "animationStepSize", "markInterval"];
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+
+
+
+function ListSlider(_ref) {
+  var value = _ref.value,
+      onChange = _ref.onChange,
+      options = _ref.options,
+      _ref$animate = _ref.animate,
+      animate = _ref$animate === void 0 ? false : _ref$animate,
+      _ref$animationInterva = _ref.animationInterval,
+      animationInterval = _ref$animationInterva === void 0 ? 1000 : _ref$animationInterva,
+      _ref$animationStepSiz = _ref.animationStepSize,
+      animationStepSize = _ref$animationStepSiz === void 0 ? 1 : _ref$animationStepSiz,
+      _ref$markInterval = _ref.markInterval,
+      markInterval = _ref$markInterval === void 0 ? 1 : _ref$markInterval,
+      props = _objectWithoutProperties(_ref, _excluded);
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(options.findIndex(function (val) {
+    return val === value;
+  })),
+      _useState2 = _slicedToArray(_useState, 2),
+      sliderValue = _useState2[0],
+      setSliderValue = _useState2[1];
+
+  var max = options.length - 1;
+
+  var handleChange = function handleChange(event, newValue) {
+    setSliderValue(newValue);
+  };
+
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
+    onChange(options[sliderValue]);
+  }, [sliderValue]);
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(),
+      _useState4 = _slicedToArray(_useState3, 2),
+      animationId = _useState4[0],
+      setAnimationId = _useState4[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
+    if (animate) {
+      var animation = setInterval(function () {
+        setSliderValue(function (val) {
+          return val >= max ? 0 : val + animationStepSize;
+        });
+      }, animationInterval);
+      setAnimationId(animation);
+    } else {
+      console.log(animationId, 'interval');
+      clearInterval(animationId);
+    }
+  }, [animate]);
+
+  var handleValueLabel = function handleValueLabel(val) {
+    return options[val];
+  };
+
+  var marks = (0,react__WEBPACK_IMPORTED_MODULE_1__.useMemo)(function () {
+    var getMarks = function getMarks(_int) {
+      return _toConsumableArray(Array(Math.floor(max / _int) + 1).keys()).map(function (i) {
+        return {
+          value: i * _int,
+          label: options[i * _int]
+        };
+      }).filter(function (m) {
+        return m.value >= 0;
+      });
+    };
+
+    return getMarks(markInterval);
+  }, [markInterval]);
+  return /*#__PURE__*/React.createElement(_mui_material__WEBPACK_IMPORTED_MODULE_0__.Box, {
+    sx: {
+      pr: 3,
+      pl: 3,
+      pt: 3
+    }
+  }, /*#__PURE__*/React.createElement(_mui_material__WEBPACK_IMPORTED_MODULE_0__.Slider, _extends({
+    max: max,
+    marks: marks,
+    value: sliderValue,
+    valueLabelDisplay: "auto",
+    valueLabelFormat: handleValueLabel,
+    onChange: handleChange
+  }, props)));
+}
+
+/***/ }),
+
 /***/ "./src/ReactMarkdown.jsx":
 /*!*******************************!*\
   !*** ./src/ReactMarkdown.jsx ***!
@@ -11380,13 +11514,16 @@ var Typography = function Typography(variant) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "DateSlider": () => (/* binding */ DateSlider),
-/* harmony export */   "IconSwitch": () => (/* binding */ IconSwitch)
+/* harmony export */   "IconSwitch": () => (/* binding */ IconSwitch),
+/* harmony export */   "ListSlider": () => (/* binding */ ListSlider)
 /* harmony export */ });
 /* harmony import */ var _shiny_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/shiny.react */ "@/shiny.react");
 /* harmony import */ var _shiny_react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_shiny_react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _DateSlider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DateSlider */ "./src/DateSlider.jsx");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material */ "@mui/material");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_mui_material__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _ListSlider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ListSlider */ "./src/ListSlider.jsx");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "@mui/material");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_mui_material__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
@@ -11394,7 +11531,7 @@ var IconSwitch = (0,_shiny_react__WEBPACK_IMPORTED_MODULE_0__.InputAdapter)(func
   var open = _ref.open,
       onClick = _ref.onClick,
       children = _ref.children;
-  return /*#__PURE__*/React.createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__.IconButton, {
+  return /*#__PURE__*/React.createElement(_mui_material__WEBPACK_IMPORTED_MODULE_3__.IconButton, {
     color: open ? 'secondary' : 'default',
     onClick: onClick
   }, children);
@@ -11408,6 +11545,12 @@ var IconSwitch = (0,_shiny_react__WEBPACK_IMPORTED_MODULE_0__.InputAdapter)(func
   };
 });
 var DateSlider = (0,_shiny_react__WEBPACK_IMPORTED_MODULE_0__.InputAdapter)(_DateSlider__WEBPACK_IMPORTED_MODULE_1__["default"], function (value, setValue) {
+  return {
+    value: value,
+    onChange: setValue
+  };
+});
+var ListSlider = (0,_shiny_react__WEBPACK_IMPORTED_MODULE_0__.InputAdapter)(_ListSlider__WEBPACK_IMPORTED_MODULE_2__["default"], function (value, setValue) {
   return {
     value: value,
     onChange: setValue

@@ -18,3 +18,10 @@ IconSwitch.shinyInput <- input("IconSwitch")
 #' @example inst/examples/DateSlider.R
 #' @export
 DateSlider.shinyInput <- input("DateSlider")
+
+
+#' ListSlider
+#'
+#' @example inst/examples/ListSlider.R
+#' @export
+ListSlider.shinyInput <- input("ListSlider")
