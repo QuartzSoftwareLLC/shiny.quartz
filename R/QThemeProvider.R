@@ -14,7 +14,9 @@ QThemeProvider <- function(...) {
         components = list(
             MuiTextField = input,
             MuiFormControl = input,
-            MuiSelect = input
+            MuiSelect = input,
+            MuiChip = list(defaultProps = list(size = "small")),
+            MuiAutocomplete = list(defaultProps = list(filterSelectedOptions = T))
         ))
     )
 }
