@@ -10,6 +10,7 @@ RoxygenNote: 7.1.2
 Remotes: quartzsoftwarellc/shiny.mui
 Imports: 
     magrittr,
+    purrr,
     shiny,
     shiny.mui
 Depends: 
