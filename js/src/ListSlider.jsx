@@ -23,7 +23,7 @@ export default function ListSlider({
     setSliderValue(newValue);
   };
   useEffect(() => {
-    setSliderValue(0);
+    setSliderValue(options.findIndex((val) => val === value));
   }, [options.join('')]);
   useEffect(() => {
     onChange(options[sliderValue]);

@@ -18869,7 +18869,9 @@ function ListSlider(_ref) {
   };
 
   (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
-    setSliderValue(0);
+    setSliderValue(options.findIndex(function (val) {
+      return val === value;
+    }));
   }, [options.join('')]);
   (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
     onChange(options[sliderValue]);

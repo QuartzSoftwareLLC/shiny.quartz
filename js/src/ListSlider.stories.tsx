@@ -9,7 +9,7 @@ export default {
 };
 
 const Template = (props) => {
-  const [value, onChange] = useState('2020-01');
+  const [value, onChange] = useState('Jim');
   return (
     <>
       <ListSlider value={value} onChange={onChange} {...props} />
