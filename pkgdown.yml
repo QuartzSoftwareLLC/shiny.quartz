@@ -2,7 +2,7 @@ pandoc: 2.7.3
 pkgdown: 2.0.2
 pkgdown_sha: ~
 articles: {}
-last_built: 2022-04-20T16:48Z
+last_built: 2022-04-22T13:54Z
 urls:
   reference: https://quartzsoftwarellc.github.io/shiny.quartz/reference
   article: https://quartzsoftwarellc.github.io/shiny.quartz/articles
