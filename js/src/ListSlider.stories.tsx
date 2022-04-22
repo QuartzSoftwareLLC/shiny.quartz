@@ -8,8 +8,8 @@ export default {
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 };
 
-const Template = (props) => {
-  const [value, onChange] = useState('Jim');
+const Template = ({ defaultValue = 'Jim', ...props }) => {
+  const [value, onChange] = useState(defaultValue);
   return (
     <>
       <ListSlider value={value} onChange={onChange} {...props} />
@@ -24,6 +24,17 @@ Primary.args = {
   options: ['Hi', 'Jim', 'Jacob', 'John'],
   step: 1,
   markInterval: 1,
+  animationStepSize: 1,
+  animate: false,
+};
+
+export const Multiple = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Multiple.args = {
+  options: ['Hi', 'Jim', 'Jacob', 'John'],
+  step: 1,
+  markInterval: 1,
+  defaultValue: ['Hi', 'Jim'],
   animationStepSize: 1,
   animate: false,
 };

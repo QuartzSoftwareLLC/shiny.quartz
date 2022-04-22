@@ -13,9 +13,20 @@ export default function ListSlider({
   markInterval = 1,
   ...props
 }) {
-  const [sliderValue, setSliderValue] = useState(
-    options.findIndex((val) => val === value)
-  );
+
+  const convertState = (value) => {
+    const mapped = [value]
+      .flat()
+      .map((x) => options.findIndex((val) => val === x));
+    return Array.isArray(value) ? mapped : mapped[0];
+  };
+
+  const [sliderValue, setSliderValue] = useState(convertState(value));
+
+  const reverseConvertState = (value) => {
+    const mapped = [sliderValue].flat().map((val) => options[val]);
+    return Array.isArray(value) ? mapped : mapped[0];
+  };
   const [innerAnimate, setInnerAnimate] = useState(false);
   const max = options.length - 1;
 
@@ -23,10 +34,10 @@ export default function ListSlider({
     setSliderValue(newValue);
   };
   useEffect(() => {
-    setSliderValue(options.findIndex((val) => val === value));
+    convertState(value);
   }, [options.join('')]);
   useEffect(() => {
-    onChange(options[sliderValue]);
+    onChange(reverseConvertState(sliderValue));
   }, [sliderValue]);
   const [animationId, setAnimationId] = useState();
   useEffect(() => {
