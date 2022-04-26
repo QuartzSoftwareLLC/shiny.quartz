@@ -26,14 +26,10 @@ use_app <- function() {
 
 #' Uses mod example
 #' @export
-use_mod <- function() {
+use_mod <- function(mod_name = "name") {
     file <- quartz_sys("templates/R/mod_example.R")
-
-    fs::file_copy(
-        file,
-        "R/mod_example.R",
-        overwrite = TRUE
-    )
+    text <- gsub("name", mod_name, readChar(file, file.info(file)$size))
+    writeLines(text, paste0("R/mod_", mod_name, ".R"))
 }
 
 #' Uses dev
