@@ -4,7 +4,7 @@
 \alias{QDataGrid}
 \title{Helper to create data grids}
 \usage{
-QDataGrid(data, height = "100\%", ...)
+QDataGrid(data, height = "400px", ...)
 }
 \description{
 Helper to create data grids

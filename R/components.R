@@ -12,3 +12,7 @@ component <- function(name, module = "@/shiny.quartz") {
 #' ReactMarkdown
 #' @export
 ReactMarkdown <- component("ReactMarkdown")
+
+#' IconPopover
+#' @export
+IconPopover <- component("IconPopover")

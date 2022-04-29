@@ -29,6 +29,7 @@ const config = {
     'react-dom': 'jsmodule["react-dom"]',
     '@/shiny.react': 'jsmodule["@/shiny.react"]',
     '@mui/material': 'jsmodule["@mui/material"]',
+    '@mui/icons-material': 'jsmodule["@mui/icons-material"]',
     '@emotion/react': 'jsmodule["@emotion/react"]',
     '@emotion/styled': 'jsmodule["@emotion/styled"]',
   },

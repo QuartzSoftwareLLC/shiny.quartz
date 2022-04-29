@@ -4,7 +4,7 @@
 \alias{use_mod}
 \title{Uses mod example}
 \usage{
-use_mod()
+use_mod(mod_name = "name")
 }
 \description{
 Uses mod example
