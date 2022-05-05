@@ -6,7 +6,7 @@
 mod_name_ui <- function(id) {
     ns <- NS(id)
     QCard(
-        title = name,
+        title = "name",
     )
 }
 

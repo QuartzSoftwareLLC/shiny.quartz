@@ -24,6 +24,18 @@ use_app <- function() {
     )
 }
 
+#' Uses the default runapp for quartz packages
+#' @export
+use_run_app <- function() {
+    file <- quartz_sys("templates/R/run_app.R")
+
+    fs::file_copy(
+        file,
+        "R/run_app.R",
+        overwrite = TRUE
+    )
+}
+
 #' Uses mod example
 #' @export
 use_mod <- function(mod_name = "name") {
