@@ -3,9 +3,9 @@
 #' @importFrom shiny.mui DataGrid Box
 #' @importFrom purrr transpose
 #' @example inst/examples/QDataGrid.R
-QDataGrid <- function(data, height = "400px", columns = NULL, ...) {
+QDataGrid <- function(data, height = "400px", columns = NULL, minColWidth = 100, ...) {
     columnz <- names(data) %>%
-        lapply(\(x) list(field = x))
+        lapply(\(x) list(field = x, flex = 1, minWidth = minColWidth))
     if (!is.null(columns)) {
         columnz <- columns
     }    

@@ -2,7 +2,7 @@ library(shiny.mui)
 library(shiny)
 library(shiny.quartz)
 data(mtcars)
-
+library(dplyr)
 
 if (interactive()) {
     shinyApp(
@@ -11,7 +11,7 @@ if (interactive()) {
         ),
         server = function(input, output) {
             output$data <- renderReact({
-                QDataGrid(mtcars)
+                QDataGrid(mtcars, minColWidth = 100)
             })
         }
     )
