@@ -5,10 +5,10 @@
 Page <- function(title, ...) {
     tagList(
         tags$head(tags$style(
-            HTML("
+            HTML(paste0("
            body {
-          background-color: #F0F2F5;
-          }"))),
+          background-color: ",shiny.quartz::background,";
+          }")))),
         tags$body(
             QThemeProvider(
                 shiny.mui::Typography(variant = "h4", title, color = "primary", sx = list(m = 1)),

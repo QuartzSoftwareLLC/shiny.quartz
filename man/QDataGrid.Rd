@@ -4,7 +4,7 @@
 \alias{QDataGrid}
 \title{Helper to create data grids}
 \usage{
-QDataGrid(data, height = "400px", ...)
+QDataGrid(data, height = "400px", columns = NULL, minColWidth = 100, ...)
 }
 \description{
 Helper to create data grids
@@ -14,7 +14,7 @@ library(shiny.mui)
 library(shiny)
 library(shiny.quartz)
 data(mtcars)
-
+library(dplyr)
 
 if (interactive()) {
     shinyApp(
@@ -23,7 +23,7 @@ if (interactive()) {
         ),
         server = function(input, output) {
             output$data <- renderReact({
-                QDataGrid(mtcars)
+                QDataGrid(mtcars, minColWidth = 100)
             })
         }
     )
