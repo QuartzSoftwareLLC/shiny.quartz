@@ -1,18 +1,25 @@
 Package: shiny.quartz
 Title: Component library for quartz software based dashboards
-Version: 0.0.0.9001
+Version: 0.0.1
 Authors@R: person("Jacob", "Clarke", , "jacobclarke718@gmail.com",  role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7221-6244") )
 Description: Component library for quartz software based dashboards built on shiny.mui
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0
 Remotes: quartzsoftwarellc/shiny.mui
 Imports: 
     magrittr,
     purrr,
     shiny,
-    shiny.mui
+    shiny.mui (>= 0.0.1),
+    htmltools
 Depends: 
     R (>= 2.10)
 LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/QuartzSoftwareLLC/shiny.quartz
+BugReports: https://github.com/QuartzSoftwareLLC/shiny.quartz/issues
