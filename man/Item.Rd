@@ -2,9 +2,12 @@
 % Please edit documentation in R/QGrid.R
 \name{Item}
 \alias{Item}
-\title{Helper to create grid items. Width is 12 by default.}
+\title{Item}
 \usage{
 Item(...)
+}
+\arguments{
+\item{...}{other props to pass to the react component.}
 }
 \description{
 Helper to create grid items. Width is 12 by default.
@@ -17,3 +20,16 @@ component_example(
     Container(Item(xs = 6, "hello"), Item(xs = 6, "world"))
 )
 }
+\seealso{
+Other layout: 
+\code{\link{Container}()},
+\code{\link{HStack}()},
+\code{\link{Page}()},
+\code{\link{QCard}()},
+\code{\link{VStack}()}
+
+Other grid: 
+\code{\link{Container}()}
+}
+\concept{grid}
+\concept{layout}

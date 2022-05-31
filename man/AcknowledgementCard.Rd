@@ -14,16 +14,11 @@ AcknowledgementCard(
 )
 }
 \arguments{
-\item{authors}{A vector of author names.}
+\item{authors}{A list of author names. List can contain name, src, and href.}
 }
 \description{
 A card for acknowledging the authors of a publication.
 }
 \examples{
-library(shiny.quartz)
-library(shiny.mui)
-
-component_example(
-    AcknowledgementCard()
-)
+component_example(AcknowledgementCard())
 }

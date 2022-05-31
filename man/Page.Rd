@@ -6,17 +6,27 @@
 \usage{
 Page(title, ...)
 }
+\arguments{
+\item{title}{character the title of the page.}
+
+\item{...}{a list of components to include in the page.}
+}
 \description{
-Page
+Generates a page with a gray background and a title at the top.
+Also applies qthemeprovider to the page.
 }
 \examples{
-library(shiny.quartz)
-library(shiny.mui)
+component_example(Page("Title", "Hello there"))
 
-component_example(
-    Page(
-        "Title",
-        TextField.shinyInput("test", label = "Should be Full Width")
-    )
-)
 }
+\seealso{
+\code{\link[=QThemeProvider]{QThemeProvider()}}
+
+Other layout: 
+\code{\link{Container}()},
+\code{\link{HStack}()},
+\code{\link{Item}()},
+\code{\link{QCard}()},
+\code{\link{VStack}()}
+}
+\concept{layout}

@@ -2,13 +2,19 @@
 % Please edit documentation in R/make_options.R
 \name{make_options}
 \alias{make_options}
-\title{Builds options for QSelect}
+\title{Make options for QSelect}
 \usage{
 make_options(...)
 }
 \arguments{
-\item{vec}{A vector of strings.}
+\item{...}{A vector of strings.}
 }
 \description{
-Builds options for QSelect
+Converts vectors to a list of keyword pairs.
+}
+\examples{
+make_options(1:5)
+}
+\seealso{
+\code{\link[=QSelect.shinyInput]{QSelect.shinyInput()}}
 }

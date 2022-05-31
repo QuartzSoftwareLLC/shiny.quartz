@@ -9,3 +9,10 @@ use_run_app()
 \description{
 Uses the default runapp for quartz packages
 }
+\seealso{
+Other utils: 
+\code{\link{use_app}()},
+\code{\link{use_dev}()},
+\code{\link{use_mod}()}
+}
+\concept{utils}

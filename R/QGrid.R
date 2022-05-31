@@ -1,11 +1,21 @@
+#' Container
 #' Helper to create grid containers
+#' 
+#' @param ... other props to pass to the react component. 
+#' 
 #' @export
-#' @importFrom shiny.mui Grid
+#' @family layout
+#' @family grid
 #' @example inst/examples/QGrid.R
-Container <- function(...) Grid(..., container = TRUE)
+Container <- function(...) shiny.mui::Grid(..., container = TRUE)
 
+#' Item
+#' 
 #' Helper to create grid items. Width is 12 by default.
+#'
+#' @param ... other props to pass to the react component. 
 #' @export
-#' @importFrom shiny.mui Grid
+#' @family layout
+#' @family grid
 #' @example inst/examples/QGrid.R
-Item <- function(...) Grid(..., item = TRUE)
+Item <- function(...) shiny.mui::Grid(..., item = TRUE)

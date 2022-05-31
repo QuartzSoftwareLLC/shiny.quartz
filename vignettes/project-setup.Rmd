@@ -1,0 +1,29 @@
+---
+title: "project-setup"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{project-setup}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(shiny.quartz)
+```
+
+# Guidelines
+
+All shiny apps should be created in R packages according to the structure documented in [mastering-shiny](https://mastering-shiny.org)
+
+
+# Project Setup
+`shiny.quartz` includes several helpers to generate a shiny app.
+These are included in the `utils` family of `shiny.quartz`.
+They include `use_mod`, `use_app`, `use_dev`, and `use_run_app`.

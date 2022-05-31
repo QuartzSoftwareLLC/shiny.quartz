@@ -10,6 +10,8 @@ component <- function(name, module = "@/shiny.quartz") {
 }
 
 #' ReactMarkdown
+#' 
+#' Render inner markdown text. This comes from the `react-markdown` package. https://github.com/remarkjs/react-markdown
 #' @export
 ReactMarkdown <- component("ReactMarkdown")
 

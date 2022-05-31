@@ -6,6 +6,19 @@
 \usage{
 ListSlider.shinyInput(inputId, ..., value = defaultValue)
 }
+\arguments{
+\item{value}{value of default value.}
+
+\item{options}{vector of options.}
+
+\item{animate}{whether to animate the slider to automatically step through options}
+
+\item{animationInterval}{integer interval in milliseconds for the slider to automatically step through options}
+
+\item{animationStepSize}{change in index in options for each step on animation}
+
+\item{markInterval}{interval at which marks should be added to the slider}
+}
 \description{
 An animated slider component that takes a list for options. Value is reset when options change.
 }

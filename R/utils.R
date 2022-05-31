@@ -13,6 +13,9 @@ quartz_sys <- function(...,
 
 
 #' Uses the default app for quartz packages
+#' 
+#' This is needed for hosting on shinyapps.io
+#' @family utils
 #' @export
 use_app <- function() {
     file <- quartz_sys("templates/app.R")
@@ -25,6 +28,7 @@ use_app <- function() {
 }
 
 #' Uses the default runapp for quartz packages
+#' @family utils
 #' @export
 use_run_app <- function() {
     file <- quartz_sys("templates/R/run_app.R")
@@ -36,7 +40,9 @@ use_run_app <- function() {
     )
 }
 
-#' Uses mod example
+#' Create a module
+#' @family utils
+#' @param mod_name name of the module to create
 #' @export
 use_mod <- function(mod_name = "name") {
     file <- quartz_sys("templates/R/mod_example.R")
@@ -44,7 +50,8 @@ use_mod <- function(mod_name = "name") {
     writeLines(text, paste0("R/mod_", mod_name, ".R"))
 }
 
-#' Uses dev
+#' Add the dev file to run development version of app
+#' @family utils
 #' @export
 use_dev <- function() {
     file <- quartz_sys("templates/dev")

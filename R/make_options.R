@@ -1,4 +1,11 @@
-#' Builds options for QSelect
+#' Make options for QSelect
+#' 
+#' Converts vectors to a list of keyword pairs.
+#' 
+#' @param ... A vector of strings.
+#' 
+#' @examples
+#' make_options(1:5)
+#' @seealso [QSelect.shinyInput()]
 #' @export
-#' @param vec A vector of strings.
 make_options <- function(...) setNames(as.list(c(...)), c(...))

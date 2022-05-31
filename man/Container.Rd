@@ -2,11 +2,16 @@
 % Please edit documentation in R/QGrid.R
 \name{Container}
 \alias{Container}
-\title{Helper to create grid containers}
+\title{Container
+Helper to create grid containers}
 \usage{
 Container(...)
 }
+\arguments{
+\item{...}{other props to pass to the react component.}
+}
 \description{
+Container
 Helper to create grid containers
 }
 \examples{
@@ -17,3 +22,16 @@ component_example(
     Container(Item(xs = 6, "hello"), Item(xs = 6, "world"))
 )
 }
+\seealso{
+Other layout: 
+\code{\link{HStack}()},
+\code{\link{Item}()},
+\code{\link{Page}()},
+\code{\link{QCard}()},
+\code{\link{VStack}()}
+
+Other grid: 
+\code{\link{Item}()}
+}
+\concept{grid}
+\concept{layout}

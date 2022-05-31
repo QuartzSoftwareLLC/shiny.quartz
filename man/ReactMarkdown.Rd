@@ -7,5 +7,5 @@
 ReactMarkdown(...)
 }
 \description{
-ReactMarkdown
+Render inner markdown text. This comes from the \code{react-markdown} package. https://github.com/remarkjs/react-markdown
 }

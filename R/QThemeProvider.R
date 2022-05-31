@@ -1,5 +1,9 @@
+#' Provider for Quartz Software MUI Theme
 #' @export
 #' @importFrom shiny.mui ThemeProvider
+#' @param ... aditional args to pass to the ThemeProvider
+#' @examples
+#' component_example(QThemeProvider(shiny.mui::Button("Hello World")))
 QThemeProvider <- function(...) {
     input <- list(defaultProps = list(fullWidth = T, size = "small"))
     ThemeProvider(

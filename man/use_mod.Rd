@@ -2,10 +2,20 @@
 % Please edit documentation in R/utils.R
 \name{use_mod}
 \alias{use_mod}
-\title{Uses mod example}
+\title{Create a module}
 \usage{
 use_mod(mod_name = "name")
 }
-\description{
-Uses mod example
+\arguments{
+\item{mod_name}{name of the module to create}
 }
+\description{
+Create a module
+}
+\seealso{
+Other utils: 
+\code{\link{use_app}()},
+\code{\link{use_dev}()},
+\code{\link{use_run_app}()}
+}
+\concept{utils}

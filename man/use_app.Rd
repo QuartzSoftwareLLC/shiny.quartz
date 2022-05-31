@@ -7,5 +7,12 @@
 use_app()
 }
 \description{
-Uses the default app for quartz packages
+This is needed for hosting on shinyapps.io
 }
+\seealso{
+Other utils: 
+\code{\link{use_dev}()},
+\code{\link{use_mod}()},
+\code{\link{use_run_app}()}
+}
+\concept{utils}

@@ -10,11 +10,14 @@ VStack(..., sx = list())
 A layout component for stacking vertically with gaps.
 }
 \examples{
-library(shiny.quartz)
-library(shiny.mui)
-
-Cube <- shiny.mui::Box(height = 100, width = "100\%", backgroundColor = "red")
-component_example(
-    VStack(sx = list(gap = 2), Cube, Cube)
-)
+component_example(VStack(tags$button("hi", "HI"), tags$button("hi", "hi")))
 }
+\seealso{
+Other layout: 
+\code{\link{Container}()},
+\code{\link{HStack}()},
+\code{\link{Item}()},
+\code{\link{Page}()},
+\code{\link{QCard}()}
+}
+\concept{layout}

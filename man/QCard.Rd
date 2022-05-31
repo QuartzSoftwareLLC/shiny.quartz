@@ -6,14 +6,27 @@
 \usage{
 QCard(..., title = "", Toolbar = Box())
 }
+\arguments{
+\item{...}{Children to include in the card}
+
+\item{title}{Title of the card}
+
+\item{Toolbar}{optional toolbar to include in the card}
+}
 \description{
 Helper to create cards with card content
 }
 \examples{
-library(shiny.quartz)
-library(shiny.mui)
-
-component_example(
-    QCard(title = "Hello", Toolbar = "hi", "go")
-)
+component_example(QCard("Hello there", title = "Card"))
 }
+\seealso{
+\code{\link[shiny.mui:Card]{shiny.mui::Card()}}
+
+Other layout: 
+\code{\link{Container}()},
+\code{\link{HStack}()},
+\code{\link{Item}()},
+\code{\link{Page}()},
+\code{\link{VStack}()}
+}
+\concept{layout}

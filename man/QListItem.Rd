@@ -2,12 +2,17 @@
 % Please edit documentation in R/QListItem.R
 \name{QListItem}
 \alias{QListItem}
-\title{Q List}
+\title{Q List Item}
 \usage{
 QListItem(primary, ..., secondary = "")
 }
+\arguments{
+\item{primary}{primary text}
+
+\item{secondary}{secondary text}
+}
 \description{
-Q List
+Helper to create shiny.mui list items with primary and secondary text
 }
 \examples{
 library(shiny.quartz)
@@ -16,4 +21,7 @@ library(shiny.mui)
 component_example(
     List(QListItem("first", secondary = "go"), QListItem("second"), QListItem("third"))
 )
+}
+\seealso{
+\code{\link[shiny.mui:List]{shiny.mui::List()}}
 }

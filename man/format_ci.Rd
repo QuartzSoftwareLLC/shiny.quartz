@@ -18,3 +18,6 @@ format_ci(val, lower, upper)
 format_ci
 Pretty print CI
 }
+\examples{
+format_ci(0.5, 0.1, 0.9)
+}

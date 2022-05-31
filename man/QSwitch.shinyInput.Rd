@@ -6,6 +6,14 @@
 \usage{
 QSwitch.shinyInput(..., label)
 }
+\arguments{
+\item{...}{other props to pass to the react component.}
+
+\item{label}{label to display}
+}
 \description{
-QSwitch
+Helper to add labels to shiny.mui switches
+}
+\seealso{
+\code{\link[shiny.mui:Switch]{shiny.mui::Switch()}}
 }
