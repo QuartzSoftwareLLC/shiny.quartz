@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">shiny.quartz</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.0.9001</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,6 +20,12 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto"><li class="active nav-item">
   <a class="nav-link" href="../reference/index.html">Reference</a>
+</li>
+<li class="nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
+    <a class="dropdown-item" href="../articles/project-setup.html">project-setup</a>
+  </div>
 </li>
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
@@ -51,16 +57,19 @@
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">VStack</span><span class="op">(</span><span class="va">...</span>, sx <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></code></pre></div>
     </div>
 
+    <div class="section level2">
+    <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
+    <div class="dont-index"><p>Other layout: 
+<code><a href="Container.html">Container</a>()</code>,
+<code><a href="HStack.html">HStack</a>()</code>,
+<code><a href="Item.html">Item</a>()</code>,
+<code><a href="Page.html">Page</a>()</code>,
+<code><a href="QCard.html">QCard</a>()</code></p></div>
+    </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">shiny.quartz</span><span class="op">)</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://quartzsoftwarellc.github.io/shiny.mui/" class="external-link">shiny.mui</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="va">Cube</span> <span class="op">&lt;-</span> <span class="fu">shiny.mui</span><span class="fu">::</span><span class="fu"><a href="https://quartzsoftwarellc.github.io/shiny.mui/reference/Box.html" class="external-link">Box</a></span><span class="op">(</span>height <span class="op">=</span> <span class="fl">100</span>, width <span class="op">=</span> <span class="st">"100%"</span>, backgroundColor <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu">component_example</span><span class="op">(</span></span>
-<span class="r-in">    <span class="fu">VStack</span><span class="op">(</span>sx <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>gap <span class="op">=</span> <span class="fl">2</span><span class="op">)</span>, <span class="va">Cube</span>, <span class="va">Cube</span><span class="op">)</span></span>
-<span class="r-in"><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">component_example</span><span class="op">(</span><span class="fu">VStack</span><span class="op">(</span><span class="va">tags</span><span class="op">$</span><span class="fu">button</span><span class="op">(</span><span class="st">"hi"</span>, <span class="st">"HI"</span><span class="op">)</span>, <span class="va">tags</span><span class="op">$</span><span class="fu">button</span><span class="op">(</span><span class="st">"hi"</span>, <span class="st">"hi"</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

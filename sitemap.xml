@@ -10,6 +10,12 @@
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://quartzsoftwarellc.github.io/shiny.quartz/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>https://quartzsoftwarellc.github.io/shiny.quartz/articles/project-setup.html</loc>
+  </url>
+  <url>
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/authors.html</loc>
   </url>
   <url>
@@ -22,13 +28,16 @@
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/Container.html</loc>
   </url>
   <url>
-    <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/DateSlider.shinyInput.html</loc>
+    <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/HStack.html</loc>
   </url>
   <url>
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/IconPopover.html</loc>
   </url>
   <url>
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/IconSwitch.shinyInput.html</loc>
+  </url>
+  <url>
+    <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/InfoPopover.html</loc>
   </url>
   <url>
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/Item.html</loc>
@@ -55,6 +64,9 @@
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/QSwitch.shinyInput.html</loc>
   </url>
   <url>
+    <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/QThemeProvider.html</loc>
+  </url>
+  <url>
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/ReactMarkdown.html</loc>
   </url>
   <url>
@@ -67,7 +79,16 @@
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/index.html</loc>
   </url>
   <url>
+    <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/input.html</loc>
+  </url>
+  <url>
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/make_options.html</loc>
+  </url>
+  <url>
+    <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/quartzDependency.html</loc>
+  </url>
+  <url>
+    <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/reexports.html</loc>
   </url>
   <url>
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/renderDialog.html</loc>
