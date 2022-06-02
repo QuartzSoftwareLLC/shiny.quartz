@@ -14,7 +14,7 @@ Imports:
     magrittr,
     purrr,
     shiny,
-    shiny.mui (>= 0.0.1),
+    shiny.mui (== 0.0.1),
     htmltools,
     shiny.react,
     fs,
