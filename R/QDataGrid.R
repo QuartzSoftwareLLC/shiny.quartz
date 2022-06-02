@@ -3,7 +3,7 @@
 #' Helper to create data grids
 #'
 #' @param data data_frame to display
-#' @param heigh height of the grid
+#' @param height height of the grid
 #' @param columns configuration for individual columns. See the mui documentation for more details [here](https://mui.com/x/react-data-grid/column-definition/)
 #' @param minColWidth minimum width of columns
 #' @param ... other props to pass to the react component. See [mui documentation](https://mui.com/x/react-data-grid/)

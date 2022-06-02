@@ -7,7 +7,11 @@
 QSelect.shinyInput(..., options, label = "")
 }
 \arguments{
+\item{...}{args to pass to the element shiny.mui::Select.shinyInput() element}
+
 \item{options}{A list of key value pairs}
+
+\item{label}{label to display for the select}
 }
 \description{
 Warning. This will not render correctly if not attatched to a shiny server.

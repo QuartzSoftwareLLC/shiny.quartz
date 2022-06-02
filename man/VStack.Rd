@@ -6,6 +6,11 @@
 \usage{
 VStack(..., sx = list())
 }
+\arguments{
+\item{...}{arguments to pass to the flexBox}
+
+\item{sx}{sx elements to pass to the flexBox as defined in material ui}
+}
 \description{
 A layout component for stacking vertically with gaps.
 }

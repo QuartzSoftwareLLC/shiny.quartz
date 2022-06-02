@@ -1,5 +1,6 @@
 #' Create Shiny Input Component from React JS
 #' @param name The name of the component.
+#' @param defaultValue the default value of the component.
 input <- function(name, defaultValue = "") {
     function(inputId, ..., value = defaultValue) {
         shiny.react::reactElement(
@@ -13,9 +14,9 @@ input <- function(name, defaultValue = "") {
 #' Icon Switch
 #'
 #' Adds a switch for boolean values
-#' @param input_id The input id
+#' @param ... args to pass to the element including the icon for the switch
+#' @param inputId The input id
 #' @param value The value of the input
-#' @param children The icon to use for the switch
 #' @example inst/examples/IconSwitch.R
 #' @export
 IconSwitch.shinyInput <- input("IconSwitch")
@@ -24,12 +25,9 @@ IconSwitch.shinyInput <- input("IconSwitch")
 #'
 #' An animated slider component that takes a list for options. Value is reset when options change.
 #' 
+#' @param inputId The input id
 #' @param value value of default value.
-#' @param options vector of options.
-#' @param animate whether to animate the slider to automatically step through options
-#' @param animationInterval integer interval in milliseconds for the slider to automatically step through options
-#' @param animationStepSize change in index in options for each step on animation
-#' @param markInterval interval at which marks should be added to the slider
+#' @param ... args to pass to the element
 #' 
 #' @example inst/examples/ListSlider.R
 #' @export

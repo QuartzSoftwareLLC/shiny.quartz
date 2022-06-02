@@ -2,6 +2,7 @@
 #' 
 #' Helper to create shiny.mui list items with primary and secondary text
 #' 
+#' @param ... argumens to pass to shiny.quartz ListItem
 #' @param primary primary text
 #' @param secondary secondary text
 #' 

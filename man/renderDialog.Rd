@@ -4,12 +4,14 @@
 \alias{renderDialog}
 \title{renderDialog}
 \usage{
-renderDialog(button_id, input, ..., ns = NS(NULL))
+renderDialog(button_id, input, ..., ns = shiny::NS(NULL))
 }
 \arguments{
 \item{button_id}{the id of the button whose state triggers opening}
 
 \item{input}{the input to the server module}
+
+\item{...}{children to pass to shiny.mui::Dialog()}
 
 \item{ns}{the namespace}
 }

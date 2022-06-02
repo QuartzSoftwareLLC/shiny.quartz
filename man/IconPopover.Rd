@@ -6,6 +6,9 @@
 \usage{
 IconPopover(...)
 }
+\arguments{
+\item{...}{args to pass to the iconpopover}
+}
 \description{
 IconPopover
 }

@@ -6,6 +6,9 @@
 \usage{
 ReactMarkdown(...)
 }
+\arguments{
+\item{...}{args to pass to react markdown}
+}
 \description{
 Render inner markdown text. This comes from the \code{react-markdown} package. https://github.com/remarkjs/react-markdown
 }

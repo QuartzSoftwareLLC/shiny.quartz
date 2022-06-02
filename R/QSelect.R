@@ -3,6 +3,8 @@
 #' Warning. This will not render correctly if not attatched to a shiny server.
 #' @export
 #' @param options A list of key value pairs
+#' @param ... args to pass to the element shiny.mui::Select.shinyInput() element
+#' @param label label to display for the select
 #' @importFrom shiny.mui Select.shinyInput
 #' @importFrom htmltools tags
 #' @import magrittr

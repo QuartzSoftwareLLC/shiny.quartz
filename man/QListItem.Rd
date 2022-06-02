@@ -9,6 +9,8 @@ QListItem(primary, ..., secondary = "")
 \arguments{
 \item{primary}{primary text}
 
+\item{...}{argumens to pass to shiny.quartz ListItem}
+
 \item{secondary}{secondary text}
 }
 \description{

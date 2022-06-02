@@ -9,13 +9,13 @@ QDataGrid(data, height = "400px", columns = NULL, minColWidth = 100, ...)
 \arguments{
 \item{data}{data_frame to display}
 
+\item{height}{height of the grid}
+
 \item{columns}{configuration for individual columns. See the mui documentation for more details \href{https://mui.com/x/react-data-grid/column-definition/}{here}}
 
 \item{minColWidth}{minimum width of columns}
 
 \item{...}{other props to pass to the react component. See \href{https://mui.com/x/react-data-grid/}{mui documentation}}
-
-\item{heigh}{height of the grid}
 }
 \description{
 Helper to create data grids

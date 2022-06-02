@@ -7,11 +7,11 @@
 IconSwitch.shinyInput(inputId, ..., value = defaultValue)
 }
 \arguments{
+\item{inputId}{The input id}
+
+\item{...}{args to pass to the element including the icon for the switch}
+
 \item{value}{The value of the input}
-
-\item{input_id}{The input id}
-
-\item{children}{The icon to use for the switch}
 }
 \description{
 Adds a switch for boolean values

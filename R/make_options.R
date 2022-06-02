@@ -8,4 +8,4 @@
 #' make_options(1:5)
 #' @seealso [QSelect.shinyInput()]
 #' @export
-make_options <- function(...) setNames(as.list(c(...)), c(...))
+make_options <- function(...) stats::setNames(as.list(c(...)), c(...))
