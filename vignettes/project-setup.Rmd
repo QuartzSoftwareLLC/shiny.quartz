@@ -12,6 +12,8 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+dir <- tempdir()
+setwd(dir)
 ```
 
 ```{r setup}
@@ -22,8 +24,22 @@ library(shiny.quartz)
 
 All shiny apps should be created in R packages according to the structure documented in [mastering-shiny](https://mastering-shiny.org)
 
-
 # Project Setup
 `shiny.quartz` includes several helpers to generate a shiny app.
 These are included in the `utils` family of `shiny.quartz`.
 They include `use_mod`, `use_app`, `use_dev`, and `use_run_app`.
+
+To create a new project, I normally create a new repo and initialize git.
+
+```{bash, run = FALSE}
+mkdir test_project
+cd test_project
+git init
+```
+
+```{bash}
+pwd
+
+```
+
+
