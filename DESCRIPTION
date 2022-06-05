@@ -8,13 +8,13 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.0
 Remotes: 
-    quartzsoftwarellc/shiny.mui,
-    appsilon/shiny.react
+    QuartzSoftwareLLC/shiny.mui,
+    Appsilon/shiny.react
 Imports: 
     shiny,
+    shiny.react,
     shiny.mui,
     htmltools,
-    shiny.react,
     fs
 Depends: 
     R (>= 4.1.0)
