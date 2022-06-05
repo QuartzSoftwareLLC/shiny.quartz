@@ -12,7 +12,7 @@ Remotes:
     appsilon/shiny.react
 Imports: 
     shiny,
-    shiny.mui (>= 0.0.1),
+    shiny.mui,
     htmltools,
     shiny.react,
     fs
