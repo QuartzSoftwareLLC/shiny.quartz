@@ -72,7 +72,8 @@
 
 
 
-<script src="project-setup_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
+
+<div class="row">
   <main id="main"><div class="page-header">
       <img src="../logo.svg" class="logo" alt=""><h1>project-setup</h1>
             
@@ -95,23 +96,23 @@
 </h2>
 <p><code>shiny.quartz</code> includes several helpers to generate a shiny app. These are included in the <code>utils</code> family of <code>shiny.quartz</code>. They include <code>use_mod</code>, <code>use_app</code>, <code>use_dev</code>, and <code>use_run_app</code>.</p>
 <p>To create a new project, I normally create a new repo and initialize git.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">mkdir</span> test_project</span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="bu">cd</span> test_project</span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="fu">git</span> init</span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="co">#&gt; hint: Using 'master' as the name for the initial branch. This default branch name</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="co">#&gt; hint: is subject to change. To configure the initial branch name to use in all</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="co">#&gt; hint: of your new repositories, which will suppress this warning, call:</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="co">#&gt; hint: </span></span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="co">#&gt; hint:    git config --global init.defaultBranch &lt;name&gt;</span></span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="co">#&gt; hint: </span></span>
-<span id="cb2-10"><a href="#cb2-10"></a><span class="co">#&gt; hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and</span></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="co">#&gt; hint: 'development'. The just-created branch can be renamed via this command:</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a><span class="co">#&gt; hint: </span></span>
-<span id="cb2-13"><a href="#cb2-13"></a><span class="co">#&gt; hint:    git branch -m &lt;name&gt;</span></span>
-<span id="cb2-14"><a href="#cb2-14"></a><span class="co">#&gt; Initialized empty Git repository in /home/runner/work/shiny.quartz/shiny.quartz/vignettes/test_project/.git/</span></span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="bu">pwd</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="co">#&gt; /home/runner/work/shiny.quartz/shiny.quartz/vignettes</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> test_project</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> test_project</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; hint: Using 'master' as the name for the initial branch. This default branch name</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; hint: is subject to change. To configure the initial branch name to use in all</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; hint: of your new repositories, which will suppress this warning, call:</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; hint: </span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; hint:    git config --global init.defaultBranch &lt;name&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; hint: </span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; hint: 'development'. The just-created branch can be renamed via this command:</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; hint: </span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; hint:    git branch -m &lt;name&gt;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Initialized empty Git repository in /home/runner/work/shiny.quartz/shiny.quartz/vignettes/test_project/.git/</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; /home/runner/work/shiny.quartz/shiny.quartz/vignettes</span></span></code></pre></div>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside>

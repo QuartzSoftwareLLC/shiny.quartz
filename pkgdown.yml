@@ -1,9 +1,9 @@
-pandoc: 2.7.3
+pandoc: 2.14.2
 pkgdown: 2.0.3
 pkgdown_sha: ~
 articles:
   project-setup: project-setup.html
-last_built: 2022-06-03T17:38Z
+last_built: 2022-06-05T02:44Z
 urls:
   reference: https://quartzsoftwarellc.github.io/shiny.quartz/reference
   article: https://quartzsoftwarellc.github.io/shiny.quartz/articles
