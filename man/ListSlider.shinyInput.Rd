@@ -19,7 +19,6 @@ An animated slider component that takes a list for options. Value is reset when 
 \examples{
 library(shiny.mui)
 library(shiny)
-library(magrittr)
 
 
 if (interactive()) {

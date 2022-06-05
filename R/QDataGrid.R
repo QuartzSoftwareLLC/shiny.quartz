@@ -18,7 +18,7 @@ QDataGrid <- function(data, height = "400px", columns = NULL, minColWidth = 100,
         columnz <- columns
     }    
     data$id <- 1:nrow(data)
-    rows <- purrr::transpose(data)
+    rows <- do.call(Map, c(f = list, data))
     Box(
         minHeight = "300px", height = height,
         DataGrid(rows = rows, columns = columnz, ...)

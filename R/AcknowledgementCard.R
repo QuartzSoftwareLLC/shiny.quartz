@@ -12,6 +12,6 @@ AcknowledgementCard <- function(authors = list(
     list(name = "John McLaughlin"))) {
     QCard(
         title = "Acknowledgements",
-        shiny.mui::List(authors %>% lapply(\(x) Link(href = x$href, ListItemButton(ListItemAvatar(Avatar(src = x$src)), ListItemText(primary = x$name)))))
+        shiny.mui::List(authors |> lapply(\(x) Link(href = x$href, ListItemButton(ListItemAvatar(Avatar(src = x$src)), ListItemText(primary = x$name)))))
     )
 }

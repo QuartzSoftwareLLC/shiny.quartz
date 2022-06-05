@@ -11,16 +11,13 @@ Remotes:
     quartzsoftwarellc/shiny.mui,
     appsilon/shiny.react
 Imports: 
-    magrittr,
-    purrr,
     shiny,
     shiny.mui (== 0.0.1),
     htmltools,
     shiny.react,
-    fs,
-    dplyr
+    fs
 Depends: 
-    R (>= 2.10)
+    R (>= 4.1.0)
 LazyData: true
 Suggests: 
     knitr,

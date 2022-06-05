@@ -7,10 +7,9 @@
 #' @param label label to display for the select
 #' @importFrom shiny.mui Select.shinyInput
 #' @importFrom htmltools tags
-#' @import magrittr
 #' @example inst/examples/QSelect.R
 QSelect.shinyInput <- function(..., options, label = "") {
-    children <- names(options) %>%
+    children <- names(options) |>
         lapply(\(x) tags$option(value = x, options[[x]]))
     shiny.mui::FormControl(
         shiny.mui::InputLabel(label),
