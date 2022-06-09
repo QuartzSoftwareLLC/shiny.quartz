@@ -3,7 +3,7 @@ pkgdown: 2.0.3
 pkgdown_sha: ~
 articles:
   project-setup: project-setup.html
-last_built: 2022-06-05T02:50Z
+last_built: 2022-06-09T16:52Z
 urls:
   reference: https://quartzsoftwarellc.github.io/shiny.quartz/reference
   article: https://quartzsoftwarellc.github.io/shiny.quartz/articles
