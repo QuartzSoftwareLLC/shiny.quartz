@@ -12,13 +12,13 @@
 #' @example inst/examples/QDataGrid.R
 #' @export
 QDataGrid <- function(data, height = "400px", columns = NULL, minColWidth = 100, ...) {
-    columnz <- names(data) %>%
+    columnz <- names(data) |>
         lapply(\(x) list(field = x, flex = 1, minWidth = minColWidth))
     if (!is.null(columns)) {
         columnz <- columns
     }    
     data$id <- 1:nrow(data)
-    rows <- do.call(Map, c(f = list, data))
+    rows <- purrr::transpose(data)
     Box(
         minHeight = "300px", height = height,
         DataGrid(rows = rows, columns = columnz, ...)

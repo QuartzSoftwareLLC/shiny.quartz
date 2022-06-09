@@ -10,7 +10,7 @@ if (interactive()) {
         ),
         server = function(input, output) {
             output$data <- renderReact({
-                QDataGrid(mtcars, minColWidth = 100)
+                QDataGrid(tidyiddr::influenza_burden(), minColWidth = 100)
             })
         }
     )
