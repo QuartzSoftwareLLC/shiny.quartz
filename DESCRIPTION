@@ -13,7 +13,7 @@ Remotes:
 Imports: 
     shiny,
     shiny.react,
-    purrr
+    purrr,
     shiny.mui,
     htmltools,
     fs
