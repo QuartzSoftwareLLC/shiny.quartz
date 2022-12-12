@@ -34,6 +34,13 @@ Page <- function(title, ...) {
         ),
         tags$body(
             QThemeProvider(
+                shiny.mui::AppBar(
+                    shiny.mui::Toolbar(
+                        shiny.mui::IconButton(href = "https://epi.quartzsoftware.com", img(height = 50, width = 50, src = "https://quartzsoftware-assets.s3.amazonaws.com/logo.svg")),
+                        shiny.mui::Button("Infectious Disease Data Repository", sx = list(color = "white"))
+                    )
+                ),
+                shiny.mui::Box(height = 60),
                 shiny.mui::Typography(variant = "h4", title, color = "primary", sx = list(m = 1)),
                 ...
             )

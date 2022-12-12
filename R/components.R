@@ -20,3 +20,8 @@ ReactMarkdown <- component("ReactMarkdown")
 #' @param ... args to pass to the iconpopover
 #' @export
 IconPopover <- component("IconPopover")
+
+#' Header
+#' @param ... args to pass to the iconpopover
+#' @export
+Header <- component("Header")
