@@ -14,6 +14,8 @@
 #' @importFrom shiny tags HTML tagList
 #' @export
 Page <- function(title, ...) {
+    waiter::waiter_set_theme(html = waiter::spin_3(), color = "white")
+
     tagList(
         tags$head(
             tags$style(
