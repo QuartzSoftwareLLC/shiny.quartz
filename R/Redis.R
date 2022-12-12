@@ -50,6 +50,6 @@ RedisCache <- R6::R6Class("RedisCache",
 #' @export
 setup_cache <- function(namespace) {
     if (system.file(package = "redux") %>% `!=`("")) {
-        shinyOptions(cache = RedisCache$new(namespace = namespace))
+        shiny::shinyOptions(cache = RedisCache$new(namespace = namespace))
     }
 }
