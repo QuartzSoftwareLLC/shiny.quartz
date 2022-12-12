@@ -21,12 +21,12 @@ Page <- function(title, ...) {
             tags$style(
                 sprintf("
         body {
-            background-color: %s;
+            background-color: %s ;
         }
         .waiter-overlay-content{
             position: absolute;
-            top: 30px; /*30 pixels from the top*/
-            left: 48%; /*48% from the left*/
+            top: 30px;
+            left: 48%%;
         }
           ", shiny.quartz::background)
             ),
