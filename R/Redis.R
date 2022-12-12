@@ -44,9 +44,10 @@ RedisCache <- R6::R6Class("RedisCache",
 )
 
 #' Setup Cache
-#' @export
+
 #' 
 #' Please set REDIS_HOST and REDIS_AUTH in your settings
+#' @export
 setup_cache <- function(namespace) {
     if (system.file(package = "redux") %>% `!=`("")) {
         shinyOptions(cache = RedisCache$new(namespace = namespace))

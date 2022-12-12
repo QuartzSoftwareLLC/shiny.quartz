@@ -7,5 +7,5 @@
 setup_cache(namespace)
 }
 \description{
-Setup Cache
+Please set REDIS_HOST and REDIS_AUTH in your settings
 }
