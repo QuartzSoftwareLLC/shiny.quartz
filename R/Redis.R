@@ -1,6 +1,6 @@
 RedisCache <- R6::R6Class("RedisCache",
     public = list(
-        initialize = function(..., namespace = NULL) {
+        initialize = function(..., namespace = system2("git", c("rev-parse", "HEAD"))) {
             private$r <- redux::hiredis(...)
             # if (Sys.getenv("REDIS_AUTH") != "") {
             #     private$r$AUTH(Sys.getenv("REDIS_AUTH"))
