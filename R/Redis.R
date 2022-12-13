@@ -4,8 +4,9 @@ RedisCache <- R6::R6Class("RedisCache",
             private$r <- redux::hiredis(...,
                 host = Sys.getenv("REDIS_HOST")
             )
-
-            private$r$AUTH(Sys.getenv("REDIS_AUTH"))
+            if (Sys.getenv("REDIS_AUTH") != "") {
+                private$r$AUTH(Sys.getenv("REDIS_AUTH"))
+            }
             # Configure redis as a cache with a 20 MB capacity
             private$r$CONFIG_SET("maxmemory", "20mb")
             private$r$CONFIG_SET("maxmemory-policy", "allkeys-lru")
@@ -33,7 +34,7 @@ RedisCache <- R6::R6Class("RedisCache",
             print("setting")
             key <- paste0(private$namespace, "-", key)
             s_value <- serialize(value, NULL)
-            private$r$SET(key, s_value, EX = 60*60*24*7)
+            private$r$SET(key, s_value, EX = 60 * 60 * 24 * 7)
         }
     ),
     private = list(
@@ -45,7 +46,7 @@ RedisCache <- R6::R6Class("RedisCache",
 
 #' Setup Cache
 
-#' 
+#'
 #' Please set REDIS_HOST and REDIS_AUTH in your settings
 #' @export
 setup_cache <- function(namespace) {
