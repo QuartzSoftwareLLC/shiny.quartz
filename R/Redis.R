@@ -34,7 +34,7 @@ RedisCache <- R6::R6Class("RedisCache",
             print("setting")
             key <- paste0(private$namespace, "-", key)
             s_value <- serialize(value, NULL)
-            private$r$SET(key, s_value, EX = 60 * 60 * 24 * 7)
+            private$r$SET(key, s_value, EX = 60 * 60 * 24)
         }
     ),
     private = list(
