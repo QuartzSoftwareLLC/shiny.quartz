@@ -4,15 +4,24 @@
 \alias{use_mod}
 \title{Create a module}
 \usage{
-use_mod(mod_name = "name")
+use_mod(package_name)
+
+use_mod(package_name)
 }
 \arguments{
 \item{mod_name}{name of the module to create}
 }
 \description{
 Create a module
+
+Create a module
 }
 \seealso{
+Other utils: 
+\code{\link{use_app}()},
+\code{\link{use_dev}()},
+\code{\link{use_run_app}()}
+
 Other utils: 
 \code{\link{use_app}()},
 \code{\link{use_dev}()},

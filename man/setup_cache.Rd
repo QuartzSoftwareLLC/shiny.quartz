@@ -4,7 +4,7 @@
 \alias{setup_cache}
 \title{Setup Cache}
 \usage{
-setup_cache(namespace)
+setup_cache(namespace = NULL)
 }
 \description{
 Please set REDIS_HOST and REDIS_AUTH in your settings

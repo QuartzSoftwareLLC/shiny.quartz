@@ -61,3 +61,33 @@ use_dev <- function() {
         overwrite = TRUE
     )
 }
+
+#' Create a module
+#' @family utils
+#' @param mod_name name of the module to create
+#' @export
+use_mod <- function(package_name) {
+    file <- quartz_sys("templates/DESCRIPTION")
+    text <- gsub("TEMPLATE", package_name, readChar(file, file.info(file)$size))
+    writeLines(text, paste0("DESCRIPTION"))
+}
+
+
+#' Runs dev version of the app.
+#' @export
+run_dev <- function () {
+    pkgload::load_all()
+    options(shiny.port = 4040)
+    options(shiny.autoreload = TRUE)
+    options(shiny.launch.browser = FALSE)
+    options(shiny.autoreload.pattern = glob2rx("*.R"))
+
+    shiny::runApp(run_app())
+}
+
+#' Loads the package and runs it
+#' @export
+run_prod <- function () {
+    pkgload::load_all()
+    run_app()
+}

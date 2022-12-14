@@ -1,3 +1,5 @@
+shiny.quartz::setup_cache()
+
 #' The application server-side
 #'
 #' @param input,output,session Internal parameters for {shiny}.
