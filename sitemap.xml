@@ -28,6 +28,9 @@
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/HStack.html</loc>
   </url>
   <url>
+    <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/Header.html</loc>
+  </url>
+  <url>
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/IconPopover.html</loc>
   </url>
   <url>
@@ -98,6 +101,12 @@
   </url>
   <url>
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/renderDialog.html</loc>
+  </url>
+  <url>
+    <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/run_dev.html</loc>
+  </url>
+  <url>
+    <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/run_prod.html</loc>
   </url>
   <url>
     <loc>https://quartzsoftwarellc.github.io/shiny.quartz/reference/setup_cache.html</loc>
