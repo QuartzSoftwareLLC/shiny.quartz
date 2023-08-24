@@ -4,25 +4,27 @@
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.12.10",
     "@babel/register": "^7.12.10",
-    "@storybook/addon-actions": "^6.4.21",
-    "@storybook/addon-essentials": "^6.4.21",
-    "@storybook/addon-interactions": "^6.4.21",
-    "@storybook/addon-links": "^6.4.21",
-    "@storybook/react": "^6.4.21",
-    "@storybook/testing-library": "^0.0.9",
+    "@storybook/addon-actions": "^7.3.2",
+    "@storybook/addon-essentials": "^7.3.2",
+    "@storybook/addon-interactions": "^7.3.2",
+    "@storybook/addon-links": "^7.3.2",
+    "@storybook/nextjs": "^7.3.2",
+    "@storybook/react": "^7.3.2",
+    "@storybook/testing-library": "^0.2.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.0.4",
     "css-loader": "^6.7.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "storybook": "^7.3.2",
     "style-loader": "^3.3.1",
     "webpack": "^5.71.0",
     "webpack-cli": "^4.9.2"
   },
   "scripts": {
     "build": "webpack",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
@@ -34,6 +36,10 @@
     "next": "^13.0.6",
     "react-markdown": "^8.0.2",
     "rehype-katex": "^6.0.2",
+    "rehype-slug": "^5.1.0",
+    "remark-breaks": "^3.0.3",
+    "remark-gfm": "^3.0.1",
     "remark-math": "^5.1.1"
-  }
+  },
+  "packageManager": "yarn@3.6.3"
 }
